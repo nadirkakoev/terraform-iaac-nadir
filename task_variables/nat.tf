@@ -1,8 +1,8 @@
-resource "aws_eip" "terraformtraining_eip" {
+resource "aws_eip" "nadir_eip" {
 vpc      = true
 }
 resource "aws_nat_gateway" "nadir_nat" {
-  allocation_id = "eipalloc-025ecbb004d8b2cdc"
+  allocation_id = "${aws_eip.nadir_eip.id}"
   subnet_id     = "${aws_subnet.public1.id}"
   depends_on    = ["aws_internet_gateway.gw"]
   tags     =   "${var.tags}"

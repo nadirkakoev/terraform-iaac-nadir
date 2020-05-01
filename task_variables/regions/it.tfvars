@@ -1,4 +1,4 @@
-region    =         "eu-west-3"
+region    =         "ap-northeast-1"
 #region_name    =     "virginia#"
 
 vpc_cidr   =       "10.0.0.0/16"
@@ -31,3 +31,8 @@ tags    =  {
     Name             =      "Task2-Paris"  
     Created_by       =       "Nadir"       
 }
+
+
+
+
+//allocation_id         = "eipalloc-025ecbb004d8b2cdc"

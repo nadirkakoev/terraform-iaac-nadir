@@ -21,3 +21,6 @@ variable "az3" {}
 variable "tags" {
   type = "map"
 }
+
+
+variable "allocation_id" {}
