@@ -1,4 +1,4 @@
-region    =         "us-east-1"
+region    =         "eu-west-3"
 #region_name    =     "virginia#"
 
 vpc_cidr   =       "10.0.0.0/16"
@@ -25,9 +25,9 @@ az3            = "c"
 
 
 tags    =  {
-    Environment     =       "Dev"
-    Team             =      "DevOps"
+    Environment     =       "Dev-Paris"
+    Team             =      "DevOps-Paris"
     Department       =      "IT"
-    Name             =      "Task2"  
+    Name             =      "Task2-Paris"  
     Created_by       =       "Nadir"       
 }
