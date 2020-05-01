@@ -1,3 +1,3 @@
-output "public_ip" {
-  value = "${aws_instance.task_2.public_ip}" // * to specify all if you want to put before publi_ip
+output "vpc" {
+  value = "${aws_vpc.nadir.id}"                       // * to specify all if you want to put before publi_ip
 }
