@@ -18,5 +18,29 @@ output "public_subnets" {
   ]
 }
 
-output "instance_task_2" {
+
+
+
+
+
+
+
+
+output "instance_ID" {
   value = "${aws_instance.task_2.id}"
+}
+
+output "instance_ARN" {
+  value = "${aws_instance.task_2.arn}"
+}
+
+output "instance_IP" {
+  value = "${aws_instance.task_2.public_ip}"
+}
+
+
+output "instance_DNS" {
+  value = "${aws_instance.task_2.public_dns}"
+}
+
+
