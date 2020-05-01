@@ -1,4 +1,4 @@
-resource "aws_vpc" "main" {
+resource "aws_vpc" "nadir" {
   cidr_block = "${var.vpc_cidr}"
 }
 
