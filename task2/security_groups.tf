@@ -32,6 +32,3 @@ resource "aws_security_group" "task2" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-
-
-
