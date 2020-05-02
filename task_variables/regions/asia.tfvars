@@ -1,6 +1,6 @@
 region    =         "ap-northeast-1"
 #region_name    =     "virginia#"
-
+ami_task           = "ami-0f310fced6141e627"
 vpc_cidr   =       "10.0.0.0/16"
 
 private_cidr1  =     "10.0.1.0/24"
@@ -16,9 +16,9 @@ public_cidr3    =      "10.0.103.0/24"
 
 
 
-az1            = "a"
-az2            = "b"
-az3            = "c"
+//az1            = "a"
+//az2            = "b"
+//az3            = "c"
 //az4            = "d"
 //az5            = "e"
 //az6            = "f"

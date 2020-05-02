@@ -40,9 +40,9 @@ output "internet_gateway_id" {
 }
 
 
-output "nat_gateway_ID" {
-  value = "${aws_nat_gateway.nadir_nat.id}"
-}
+//output "nat_gateway_ID" {
+  //value = "${aws_nat_gateway.nadir_nat.id}"
+//}
 
 
 
