@@ -25,10 +25,10 @@ public_cidr3    =      "10.0.103.0/24"
 
 
 tags    =  {
-    Environment     =       "Dev-Paris"
-    Team             =      "DevOps-Paris"
+    Environment     =       "Dev"
+    Team             =      "DevOps"
     Department       =      "IT"
-    Name             =      "Task2-Paris"  
+    Name             =      "Task2"  
     Created_by       =       "Nadir"       
 }
 

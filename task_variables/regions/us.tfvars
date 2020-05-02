@@ -25,14 +25,14 @@ public_cidr3    =      "192.168.6.0/24"
 
 
 tags    =  {
-    Environment     =       "Dev-Paris"
-    Team             =      "DevOps-Paris"
+    Environment     =       "Dev"
+    Team             =      "DevOps"
     Department       =      "IT"
-    Name             =      "Task2-Paris"  
+    Name             =      "Task2"  
     Created_by       =       "Nadir"       
 }
 
 
 
 
-allocation_id         = "eipalloc-025ecbb004d8b2cdc"
+//allocation_id         = "eipalloc-025ecbb004d8b2cdc"
