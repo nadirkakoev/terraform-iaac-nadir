@@ -1,0 +1,13 @@
+provider "aws" {
+  alias  = "peer"
+  region = "us-east-2"
+}
+resource "aws_vpc_peering_connection_accepter" "peer" {
+  provider                  = "aws.peer"
+  vpc_peering_connection_id = "pcx-07eb4ade26884e10a"
+  auto_accept               = true
+
+  tags = {
+    Side = "Accepter"
+  }
+}

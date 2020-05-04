@@ -1,6 +1,6 @@
-region    =         "eu-west-1"
+region    =         "us-east-1"
 #region_name    =     "virginia#"
-ami_task     =  "ami-06ce3edf0cff21f07"
+ami_task     =  "ami-0323c3dd2da7fb37d"
 vpc_cidr   =       "10.0.0.0/16"
 
 private_cidr1  =     "10.0.1.0/24"
