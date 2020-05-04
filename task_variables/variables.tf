@@ -22,7 +22,6 @@ variable "tags" {
   type = "map"
 }
 
-
 //variable "allocation_id" {}
 
-variable "ami_task"  {}
+variable "ami_task" {}

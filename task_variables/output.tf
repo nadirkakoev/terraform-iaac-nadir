@@ -34,15 +34,11 @@ output "instance_DNS" {
   value = "${aws_instance.task_2.public_dns}"
 }
 
-
 output "internet_gateway_id" {
   value = "${aws_internet_gateway.gw.id}"
 }
 
-
 //output "nat_gateway_ID" {
-  //value = "${aws_nat_gateway.nadir_nat.id}"
+//value = "${aws_nat_gateway.nadir_nat.id}"
 //}
-
-
 
