@@ -1,5 +1,5 @@
 provider "aws" {
-  region  = "ca-central-1"
+  region  = "eu-west-1"
   version = "2.59"
 }
 
@@ -19,7 +19,7 @@ data "aws_ami" "centos" {
 }
 
 resource "aws_key_pair" "eu-west-2-key" {
-  key_name   = "farrukhs_bastion"
+  key_name   = "nadir_bastion_key"
   public_key = "${file("~/.ssh/id_rsa.pub")}"
 }
 
