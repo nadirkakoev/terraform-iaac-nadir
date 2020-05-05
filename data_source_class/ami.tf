@@ -54,6 +54,10 @@ resource "aws_instance" "web" {
 resource "aws_instance" "centos" {
   ami           = "${data.aws_ami.centos.id}"
   instance_type = "t2.micro"
+  tags = {
+    Name = "HelloWorld"
+  }
+
 }
 
 output "ami" {
