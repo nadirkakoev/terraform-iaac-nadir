@@ -1,7 +1,7 @@
 resource "aws_launch_template" "example" {
   name_prefix   = "example"
   image_id      = "${data.aws_ami.image.id}"
-  instance_type = "c5.large"
+  instance_type = "t2.micro"
 }
 
 resource "aws_autoscaling_group" "example" {
