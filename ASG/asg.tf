@@ -14,7 +14,7 @@ resource "aws_autoscaling_group" "bar" {
     "us-east-1c",
   ]
 
-  min_size = 1
+  min_size = 1                       #alter
   max_size = 2
 
   lifecycle {
