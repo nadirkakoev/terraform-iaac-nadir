@@ -11,7 +11,7 @@ resource "aws_autoscaling_group" "example" {
     "us-east-1c",
   ]
 
-  desired_capacity = 1               //for default instance only not for mixed instance policy 
+  desired_capacity = 1 //for default instance only not for mixed instance policy 
   max_size         = 1
   min_size         = 1
 
@@ -23,7 +23,7 @@ resource "aws_autoscaling_group" "example" {
 
       override {
         instance_type     = "c4.large" //specify   type
-        weighted_capacity = "3"     // how many of instances  we needed 
+        weighted_capacity = "3"        // how many of instances  we needed 
       }
 
       override {
