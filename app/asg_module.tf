@@ -1,4 +1,4 @@
 module "app1" {
-source = "./module"
+    source = "./module"
 }
 
