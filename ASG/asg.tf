@@ -18,6 +18,6 @@ resource "aws_autoscaling_group" "bar" {
   max_size = 2
 
   lifecycle {
-    create_before_destroy = true         // Blue Green Deployment = true otherwise would be a downtime !!!
+    create_before_destroy = true         // Blue Green Deployment = true otherwise would be a downtime !!!  metadata
   }
 }
