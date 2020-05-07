@@ -2,8 +2,8 @@ resource "aws_launch_configuration" "as_conf" {
   name          = "web_config"
   image_id      = "${data.aws_ami.image.id}"
   instance_type = "t2.micro"
-  user_data = "${file("wordpress.sh")}"
-  spot_price = "0.1"
+  user_data     = "${file("wordpress.sh")}"
+  spot_price    = "0.1"
 }
 
 resource "aws_autoscaling_group" "bar" {
@@ -11,15 +11,15 @@ resource "aws_autoscaling_group" "bar" {
   launch_configuration = "${aws_launch_configuration.as_conf.name}"
 
   availability_zones = [
-    "us-east-1a",                     //mandatory for az  or subnets 
+    "us-east-1a", //mandatory for az  or subnets 
     "us-east-1b",
     "us-east-1c",
   ]
 
-  min_size = 1                       #alter
+  min_size = 1 #alter
   max_size = 2
 
   lifecycle {
-    create_before_destroy = true         // Blue Green Deployment = true otherwise would be a downtime !!!  metadata
+    create_before_destroy = true // Blue Green Deployment = true otherwise would be a downtime !!!  metadata
   }
 }
