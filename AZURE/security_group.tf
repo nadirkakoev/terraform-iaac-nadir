@@ -1,4 +1,4 @@
-resource "azurerm_network_security_group" "sec_group1" {
+resource "azurerm_network_security_group" "sec_group1" {     //nacl and security group 
   name = "dev"
   location = "${var.location}"
   resource_group_name = "${var.resource_group_name}"
