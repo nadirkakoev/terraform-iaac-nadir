@@ -58,8 +58,8 @@ resource "azurerm_virtual_machine" "vm2" {
   }
   os_profile_linux_config {
     disable_password_authentication = true
-    ssh_keys {
-    path = "/home/ec2-user/.ssh/authorized_keys"
+    ssh_keys {                                            
+    path = "/home/ec2-user/.ssh/authorized_keys"           //instead of password we give ssh key
     key_data = "${var.ssh_key}"
     }
   }
