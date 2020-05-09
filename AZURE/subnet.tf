@@ -18,3 +18,13 @@ resource "azurerm_subnet" "private3" {
   virtual_network_name = "${azurerm_virtual_network.vnet1.name}"
   address_prefix = "10.0.3.0/24"
 }
+
+
+//resource "azurerm_subnet" "private3" {
+  //count = 3                                //loopin way to create 3 subnets
+  //name = "private${count.index +1}"
+  //resource_group_name = "${var.resource_group_name}"
+  //virtual_network_name = "${azurerm_virtual_network.vnet1.name}"
+  //address_prefix = "10.0.3.0/24"       //interpolation needed for address_prefix
+//}
+
