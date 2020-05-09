@@ -64,8 +64,8 @@ resource "azurerm_virtual_machine" "vm2" {
     disable_password_authentication = true
 
     ssh_keys {
-      path     = "/home/centos/.ssh/authorized_keys"         //instead of password we give ssh key
-      key_data = "${file("/home/ec2-user/.ssh/id_rsa.pub")}"
+      path     = "/home/centos/.ssh/authorized_keys"
+      key_data = "${file("/home/ec2-user/.ssh/id_rsa.pub")}" //ssh instead of password
     }
   }
 
