@@ -1,6 +1,6 @@
 module "vpc" {
   source  = "farrukh90/vpc/aws"
-  region = "us-east-1"
+  region = "${var.region}"         //soft coding
   vpc_cidr = "10.0.0.0/16"
   public_cidr1 = "10.0.1.0/24"
   public_cidr2 = "10.0.2.0/24"
